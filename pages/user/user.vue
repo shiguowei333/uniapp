@@ -29,9 +29,9 @@
 				</view>
 				<view class="row">
 					<view class="left">
-						<uni-icons type="download-filled" size="30" color="#28b389"></uni-icons>
+						<uni-icons type="star-filled" size="30" color="#28b389"></uni-icons>
 						<view class="text">
-							我的下载
+							我的评分
 						</view>
 					</view>
 					<view class="right">
@@ -43,14 +43,14 @@
 				</view>
 				<view class="row">
 					<view class="left">
-						<uni-icons type="download-filled" size="30" color="#28b389"></uni-icons>
+						<uni-icons type="chatboxes-filled" size="30" color="#28b389"></uni-icons>
 						<view class="text">
-							我的下载
+							联系客服
 						</view>
 					</view>
 					<view class="right">
 						<view class="text">
-							33
+							
 						</view>
 						<uni-icons type="right" size="15" color="#aaa"></uni-icons>
 					</view>
@@ -61,28 +61,28 @@
 			<view class="list">
 				<view class="row">
 					<view class="left">
-						<uni-icons type="download-filled" size="30" color="#28b389"></uni-icons>
+						<uni-icons type="notification-filled" size="30" color="#28b389"></uni-icons>
 						<view class="text">
-							我的下载
+							订阅更新
 						</view>
 					</view>
 					<view class="right">
 						<view class="text">
-							33
+							
 						</view>
 						<uni-icons type="right" size="15" color="#aaa"></uni-icons>
 					</view>
 				</view>
 				<view class="row">
 					<view class="left">
-						<uni-icons type="download-filled" size="30" color="#28b389"></uni-icons>
+						<uni-icons type="flag-filled" size="30" color="#28b389"></uni-icons>
 						<view class="text">
-							我的下载
+							常见问题
 						</view>
 					</view>
 					<view class="right">
 						<view class="text">
-							33
+							
 						</view>
 						<uni-icons type="right" size="15" color="#aaa"></uni-icons>
 					</view>
