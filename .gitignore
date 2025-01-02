@@ -1,0 +1,41 @@
+# 忽略node_modules目录
+node_modules/
+ 
+# 忽略dist目录，这是uniapp构建的输出目录
+dist/
+ 
+# 忽略日志文件
+*.log
+ 
+# 忽略IDE的配置文件
+.idea/
+.vscode/
+ 
+# 忽略uniapp的本地缓存配置文件
+uniapp-pages.json
+ 
+# 忽略本地环境配置文件
+env.local.js
+ 
+# 忽略各种包管理器的锁文件
+package-lock.json
+yarn.lock
+ 
+# 忽略其他不需要版本控制的文件或文件夹
+/unpackage/
+/dist/
+/build/
+ 
+# 忽略不同环境下的配置文件
+*.env.local
+*.env.development.local
+*.env.production.local
+ 
+# 忽略NPM的缓存文件
+.npm/
+ 
+# 忽略webpack的缓存文件
+.webpack/
+ 
+# 忽略vue项目中的测试文件
+tests/
