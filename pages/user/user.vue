@@ -1,5 +1,5 @@
 <template>
-	<view class="userLayout">
+	<view class="userLayout pageBg">
 		<view class="userInfo">
 			<view class="avatar">
 				<image src="/static/images/xxmLogo.png" mode="aspectFill"></image>
@@ -15,7 +15,7 @@
 			<view class="list">
 				<view class="row">
 					<view class="left">
-						<uni-icons type="download-filled" size="30" color="#28b389"></uni-icons>
+						<uni-icons type="download-filled" size="30"></uni-icons>
 						<view class="text">
 							我的下载
 						</view>
@@ -29,7 +29,7 @@
 				</view>
 				<view class="row">
 					<view class="left">
-						<uni-icons type="star-filled" size="30" color="#28b389"></uni-icons>
+						<uni-icons type="star-filled" size="30"></uni-icons>
 						<view class="text">
 							我的评分
 						</view>
@@ -43,7 +43,7 @@
 				</view>
 				<view class="row">
 					<view class="left">
-						<uni-icons type="chatboxes-filled" size="30" color="#28b389"></uni-icons>
+						<uni-icons type="chatboxes-filled" size="30"></uni-icons>
 						<view class="text">
 							联系客服
 						</view>
@@ -67,7 +67,7 @@
 			<view class="list">
 				<view class="row">
 					<view class="left">
-						<uni-icons type="notification-filled" size="30" color="#28b389"></uni-icons>
+						<uni-icons type="notification-filled" size="30"></uni-icons>
 						<view class="text">
 							订阅更新
 						</view>
@@ -81,7 +81,7 @@
 				</view>
 				<view class="row">
 					<view class="left">
-						<uni-icons type="flag-filled" size="30" color="#28b389"></uni-icons>
+						<uni-icons type="flag-filled" size="30"></uni-icons>
 						<view class="text">
 							常见问题
 						</view>
@@ -152,6 +152,11 @@
 						.left{
 							display: flex;
 							align-items: center;
+							:deep() {
+								.uni-icons {
+									color: $brand-theme-color !important;
+								}
+							}
 							.text{
 								padding-left: 20rpx;
 								color:#666
