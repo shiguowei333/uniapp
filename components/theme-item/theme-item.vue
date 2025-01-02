@@ -1,7 +1,7 @@
 <template>
 	<view class="themeItem">
 		<navigator url="" class="box">
-			<image class="pic" src="../../common/images/classify1.jpg" mode=""></image>
+			<image class="pic" src="../../common/images/classify1.jpg" mode="aspectFill"></image>
 			<view class="mask">明星美女</view>
 			<view class="tab">3天前更新</view>
 		</navigator>
@@ -17,7 +17,7 @@
 		.box {
 			height: 340rpx;
 			border-radius: 10rpx;
-			visibility: hidden;
+			overflow: hidden;
 			position: relative;
 			.pic {
 				width: 100%;

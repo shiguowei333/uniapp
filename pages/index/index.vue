@@ -2,10 +2,8 @@
 	<view class="homeLayout">
 		<view class="banner">
 			<swiper indicator-dots indicator-color="rgba(255,255,255,0.5)" indicator-active-color="#fff" autoplay circular>
-				<swiper-item>
-					<view v-for="item in 3">
-						<image src="../../common/images/banner1.jpg" mode="aspectFill"></image>
-					</view>
+				<swiper-item v-for="item in 3">
+					<image src="../../common/images/banner1.jpg" mode="aspectFill"></image>
 				</swiper-item>
 			</swiper>
 		</view>
@@ -55,9 +53,7 @@
 				</template>
 			</common-title>
 			<view class="content">
-				<theme-item v-for="item in 8">
-					
-				</theme-item>
+				<theme-item v-for="item in 8"></theme-item>
 			</view>
 		</view>
 	</view>
@@ -172,7 +168,7 @@
 				padding: 0 30rpx;
 				display: grid;
 				gap: 15rpx;
-				grid-template-columns: repat(3,1fr);
+				grid-template-columns: repeat(3,1fr);
 			}
 		}
 	}
