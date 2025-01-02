@@ -54,6 +54,12 @@
 						</view>
 						<uni-icons type="right" size="15" color="#aaa"></uni-icons>
 					</view>
+					<!-- #ifdef MP -->
+					<button open-type="contact">联系客服</button>
+					<!-- #endif -->
+					<!-- #ifndef MP -->
+					<button @click="clickContact">拨打电话</button>
+					<!-- #endif -->
 				</view>
 			</view>
 		</view>
@@ -93,7 +99,9 @@
 </template>
 
 <script setup>
-	
+	const clickContact = () => {
+		uni.makeBluetoothPair()
+	}
 </script>
 
 <style lang="scss" scoped>
