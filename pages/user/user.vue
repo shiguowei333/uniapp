@@ -13,34 +13,38 @@
 		</view>
 		<view class="section">
 			<view class="list">
-				<view class="row">
-					<view class="left">
-						<uni-icons type="download-filled" size="30"></uni-icons>
-						<view class="text">
-							我的下载
+				<navigator url="/pages/classify/classify" open-type="reLaunch">
+					<view class="row">
+						<view class="left">
+							<uni-icons type="download-filled" size="30"></uni-icons>
+							<view class="text">
+								我的下载
+							</view>
+						</view>
+						<view class="right">
+							<view class="text">
+								33
+							</view>
+							<uni-icons type="right" size="15" color="#aaa"></uni-icons>
 						</view>
 					</view>
-					<view class="right">
-						<view class="text">
-							33
+				</navigator>
+				<navigator url="/pages/classify/classify" open-type="reLaunch">
+					<view class="row">
+						<view class="left">
+							<uni-icons type="star-filled" size="30"></uni-icons>
+							<view class="text">
+								我的评分
+							</view>
 						</view>
-						<uni-icons type="right" size="15" color="#aaa"></uni-icons>
-					</view>
-				</view>
-				<view class="row">
-					<view class="left">
-						<uni-icons type="star-filled" size="30"></uni-icons>
-						<view class="text">
-							我的评分
+						<view class="right">
+							<view class="text">
+								33
+							</view>
+							<uni-icons type="right" size="15" color="#aaa"></uni-icons>
 						</view>
 					</view>
-					<view class="right">
-						<view class="text">
-							33
-						</view>
-						<uni-icons type="right" size="15" color="#aaa"></uni-icons>
-					</view>
-				</view>
+				</navigator>
 				<view class="row">
 					<view class="left">
 						<uni-icons type="chatboxes-filled" size="30"></uni-icons>

@@ -1,5 +1,5 @@
 <template>
-	<view class="homeLayout">
+	<view class="homeLayout pageBg">
 		<view class="banner">
 			<swiper indicator-dots indicator-color="rgba(255,255,255,0.5)" indicator-active-color="#fff" autoplay circular>
 				<swiper-item v-for="item in 3">
@@ -75,6 +75,7 @@
 				swiper-item {
 					width: 100%;
 					height: 100%;
+					padding:0 30rpx;
 					image {
 						width: 100%;
 						height: 100%;
