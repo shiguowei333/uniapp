@@ -106,7 +106,7 @@
 	}
 </script>
 
-<style>
+<style scoped lang="scss">
 .preview{
 	width: 100%;
 	height: 100vh;	
