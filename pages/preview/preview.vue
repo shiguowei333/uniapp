@@ -13,10 +13,10 @@
 				3/9
 			</view>
 			<view class="time">
-				<uni-dateformat :data="new Date()" format="hh:mm"></uni-dateformat>
+				<uni-dateformat :date="new Date()" format="hh:mm"></uni-dateformat>
 			</view>
 			<view class="date">
-				<uni-dateformat :data="new Date()" format="MM月dd日"></uni-dateformat>
+				<uni-dateformat :date="new Date()" format="MM月dd日"></uni-dateformat>
 			</view>
 			<view class="footer">
 				<view class="box" @click="clickInfo">
@@ -25,7 +25,7 @@
 						信息
 					</view>
 				</view>
-				<view class="box">
+				<view class="box" @click="clickScore">
 					<uni-icons type="info" size="28"></uni-icons>
 					<view class="text">
 						5分
@@ -83,9 +83,29 @@
 									<view class="tab" v-for="item in 3">标签名</view>
 								</view>
 							</view>										
-							<view class="copyright">声明：本图片来用户投稿，非商业使用，用于免费学习交流，如侵犯了您的权益，您可以拷贝壁纸ID举报至平台，邮箱513894357@qq.com，管理将删除侵权壁纸，维护您的权益。</view>
+							<view class="copyright">声明：本图片来用户投稿，非商业使用，用于免费学习交流，如侵犯了您的权益，您可以拷贝壁纸ID举报至平台，邮箱2911790768@qq.com，管理将删除侵权壁纸，维护您的权益。</view>
 					</view>
 				</scroll-view>
+			</view>
+		</uni-popup>
+		<uni-popup ref="scorePopup" :is-mask-click="false">
+			<view class="scorePopup">
+				<view class="popHeader">
+					<view></view>
+					<view class="title">
+						壁纸评分
+					</view>
+					<view class="close" @click="clickScoreClose">
+						<uni-icons type="closeempty" size="18" color="#999"></uni-icons>
+					</view>
+				</view>
+				<view class="content">
+					<uni-rate v-model="userScore" @change="onChange"></uni-rate>
+					<text class="text">{{ userScore }}分</text>
+				</view>
+				<view class="footer">
+					<button @click="submitScore" :disabled="!userScore" size="mini" plain>确认评分</button>
+				</view>
 			</view>
 		</uni-popup>
 	</view>
@@ -94,7 +114,9 @@
 <script setup>
 	import { ref } from 'vue'
 	const infoPopup = ref()
+	const scorePopup = ref()
 	const maskState = ref(true)
+	const userScore = ref(0)
 	const maskChange = () => {
 		maskState.value = !maskState.value
 	}
@@ -103,6 +125,15 @@
 	}
 	const clickInfoClose = () => {
 		infoPopup.value.close()
+	}
+	const clickScore = () => {
+		scorePopup.value.open()
+	}
+	const clickScoreClose = () => {
+		scorePopup.value.close()
+	}
+	const submitScore = () => {
+		
 	}
 </script>
 
