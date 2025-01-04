@@ -6,8 +6,8 @@
 			</swiper-item>
 		</swiper>
 		<view class="mask" v-if="maskState">
-			<view class="goBack">
-				
+			<view @click="goBack" class="goBack" :style="{top:getStatusBarHeight()+'px'}">
+				<uni-icons type="back" size="20" color="#fff"></uni-icons>
 			</view>
 			<view class="count">
 				3/9
@@ -113,6 +113,8 @@
 
 <script setup>
 	import { ref } from 'vue'
+	import {getStatusBarHeight} from "@/utils/system.js"
+	
 	const infoPopup = ref()
 	const scorePopup = ref()
 	const maskState = ref(true)
@@ -134,6 +136,9 @@
 	}
 	const submitScore = () => {
 		
+	}
+	const goBack = () => {
+		uni.navigateBack()
 	}
 </script>
 
